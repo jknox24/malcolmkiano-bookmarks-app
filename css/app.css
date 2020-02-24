@@ -245,7 +245,7 @@ footer {
   text-align: center;
 }
 
-.overlay form label {
+.overlay form label:not(.star) {
   display: block;
   margin-bottom: 0.5em;
 }
@@ -304,6 +304,47 @@ select {
   outline-color: var(--color1);
   text-transform: uppercase;
   color: #9B9B9B;
+}
+
+
+/* =========================================== */
+/* star styles */
+.star-rating {
+  display: flex;
+  font-size: 1.2rem;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.star-rating span,
+.star-rating input {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.star-rating .star {
+  display: block;
+  cursor: pointer;
+  background-image: url('../img/star-outline.svg');
+  background-size: 100% 100%;
+  height: 1em;
+  width: 1em;
+  opacity: 0.8;
+  transition: all .2s ease;
+}
+
+.star-rating .star:hover,
+.star-rating:hover .star:hover,
+.star-rating :checked ~ .star,
+.star-rating .star:hover ~ .star {
+  background-image: url('../img/star-filled.svg');
+}
+
+.star-rating:hover .star {
+  background-image: url('../img/star-outline.svg');
 }
 
 

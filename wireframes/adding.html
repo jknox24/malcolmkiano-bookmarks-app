@@ -114,6 +114,21 @@
             <label for="description">Website Description:</label>
             <textarea required id="description" name="description" rows="3" maxlength="140" placeholder="Lots and lots of text describing the website that we all know nobody will read but is important to have."></textarea>
           </div>
+          <div class="group">
+            <label for="rating">Rating:</label>
+            <div class="star-rating">
+              <input id="star5" type="radio" name="rating" value="5">
+              <label for="star5" class="star"><span>5 stars</span></label>
+              <input id="star4" type="radio" name="rating" value="4">
+              <label for="star4" class="star"><span>4 stars</span></label>
+              <input id="star3" checked type="radio" name="rating" value="3">
+              <label for="star3" class="star"><span>3 stars</span></label>
+              <input id="star2" type="radio" name="rating" value="2">
+              <label for="star2" class="star"><span>2 stars</span></label>
+              <input id="star1" type="radio" name="rating" value="1">
+              <label for="star1" class="star"><span>1 star</span></label>
+            </div>  
+          </div>
           <div class="group group-centered">
             <button>Add bookmark</button>
           </div>
