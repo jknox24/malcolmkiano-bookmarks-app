@@ -5,7 +5,7 @@ Links to wireframes:
 - _coming soon_
 
 ## TO-DO:
-- [ ] Design the app
+- [x] Design the app
 - [ ] Create HTML wireframes
 - [ ] Style the wireframes using CSS
 - [ ] Code the STORE module
