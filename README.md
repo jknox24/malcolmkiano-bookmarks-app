@@ -1,5 +1,5 @@
 # Bookmarks App
-Live app _coming soon_.
+Live app: _coming soon_.
 
 Links to wireframes:
 - _coming soon_
