@@ -2,12 +2,15 @@
 Live app: _coming soon_.
 
 Links to wireframes:
-- _coming soon_
+- [Default View](./wireframes/default.html)
+- [Expanded View](./wireframes/expanded.html)
+- [Adding View](./wireframes/adding.html)
+- [Empty State View](./wireframes/empty-state.html) _(this shows when there is no data in the store)_
 
 ## TO-DO:
 - [x] Design the app
-- [ ] Create HTML wireframes
-- [ ] Style the wireframes using CSS
+- [x] Create HTML wireframes
+- [x] Style the wireframes using CSS
 - [ ] Code the STORE module
 - [ ] Code the API module
 - [ ] Code all the listener functions as well as render functions (app)
