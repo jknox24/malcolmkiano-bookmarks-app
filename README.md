@@ -2,10 +2,10 @@
 Live app: _coming soon_.
 
 Links to wireframes:
-- [Default View](./wireframes/default.html)
-- [Expanded View](./wireframes/expanded.html)
-- [Adding View](./wireframes/adding.html)
-- [Empty State View](./wireframes/empty-state.html) _(this shows when there is no data in the store)_
+- [Default View](https://thinkful-ei-macaw.github.io/malcolmkiano-bookmarks-app/wireframes/default.html)
+- [Expanded View](https://thinkful-ei-macaw.github.io/malcolmkiano-bookmarks-app//wireframes/expanded.html)
+- [Adding View](https://thinkful-ei-macaw.github.io/malcolmkiano-bookmarks-app//wireframes/adding.html)
+- [Empty State View](https://thinkful-ei-macaw.github.io/malcolmkiano-bookmarks-app//wireframes/empty-state.html) _(this shows when there is no data in the store)_
 
 ## TO-DO:
 - [x] Design the app
