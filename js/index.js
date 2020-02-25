@@ -4,6 +4,7 @@
 // imports
 import api from './api.js';
 import store from './store.js';
+import background from './background.js';
 
 
 // ===============================================================
@@ -16,7 +17,25 @@ function init(){
   handleBookmarkSubmit();
   handleCancelAddClick();
   handleDismissErrorClick();
+  setup();
   
+  
+
+}
+
+function serializeJson(form){
+  let rawData = new FormData(form);
+  let parsed = {};
+  rawData.forEach((val, name) => parsed[name] = val);
+  return JSON.stringify(parsed);
+}
+
+function setup(){
+  // alter the background
+  let colors = background.getColors();
+  $('html').css('--color1', colors[0]);
+  $('html').css('--color2', colors[1]);
+
   // get items and render
   api.getItems()
     .then(bookmarks => {
@@ -27,14 +46,6 @@ function init(){
       store.error = error;
       render();
     });
-
-}
-
-function serializeJson(form){
-  let rawData = new FormData(form);
-  let parsed = {};
-  rawData.forEach((val, name) => parsed[name] = val);
-  return JSON.stringify(parsed);
 }
 
 

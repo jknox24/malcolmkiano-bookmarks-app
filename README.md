@@ -16,5 +16,7 @@ Links to wireframes:
 - [x] Code all the listener functions as well as render functions (app)
 - [x] Test the app & get feedback
 - [x] Apply any changes to app
-- [ ] Test again _(on it)_
+- [x] Test again
+- [ ] Enable bookmark editing
+- [x] Add background color switching with time
 - [ ] SHIP!
