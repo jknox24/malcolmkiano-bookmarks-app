@@ -203,6 +203,10 @@ footer {
   color: red;
 }
 
+.bookmark .bookmark-content a:hover {
+  text-decoration: underline;
+}
+
 .rating {
   white-space: nowrap;
 }

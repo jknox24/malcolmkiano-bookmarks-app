@@ -15,6 +15,6 @@ Links to wireframes:
 - [x] Code the API module
 - [x] Code all the listener functions as well as render functions (app)
 - [x] Test the app & get feedback
-- [ ] Apply any changes to app
+- [x] Apply any changes to app
 - [ ] Test again
 - [ ] SHIP!
