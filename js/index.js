@@ -106,7 +106,7 @@ function handleAddBookmarkSubmit(){
   $('main').on('submit', '#addForm', function(e){
     e.preventDefault();
 
-    let form = $('main').find('#addForm');
+    let form = $('main').find('#addForm')[0];
     let data = serializeJson(form);
     
     api.addItem(data)
