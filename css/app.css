@@ -5,7 +5,7 @@
 html {
   height: 100%;
   font-family: 'Rubik', sans-serif;
-  font-size: 1.8vh;
+  font-size: min(1.8vh, 20px);
 
   --color1: #8A7CFF;
   --color2: #BA81FF;
@@ -242,12 +242,28 @@ footer {
 }
 
 .overlay form .group-centered {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group-centered button {
+  flex: 1;
 }
 
 .overlay form label:not(.star) {
   display: block;
   margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    justify-content: center;
+  }
+
+  .overlay form {
+    border-radius: .2rem;
+  }
 }
 
 
@@ -269,6 +285,10 @@ button {
 
 button.btn-alt {
   background-image: linear-gradient(to right, #232526, #414345);
+}
+
+button:not(:last-of-type) {
+  margin-right: 1em;
 }
 
 button:hover {
@@ -311,7 +331,8 @@ select {
 /* star styles */
 .star-rating {
   display: flex;
-  font-size: 1.2rem;
+  font-size: 2rem;
+  margin-bottom: 1em;
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
