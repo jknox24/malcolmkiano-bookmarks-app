@@ -12,7 +12,7 @@ Links to wireframes:
 - [x] Create HTML wireframes
 - [x] Style the wireframes using CSS
 - [x] Code the STORE module
-- [ ] Code the API module
+- [x] Code the API module
 - [x] Code all the listener functions as well as render functions (app)
 - [ ] Test the app & get feedback
 - [ ] Apply any changes to app
