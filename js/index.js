@@ -214,7 +214,7 @@ function generateBookmarksContentHTML(){
     // print empty state
     html = `
     <article class="content content-empty">
-      <img src="../img/bookmarks-empty.svg" alt="Girl holding a book">
+      <img src="img/bookmarks-empty.svg" alt="Girl holding a book">
       <p>Nothing to see here... yet!</p>
     </article>
     `;
