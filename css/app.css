@@ -318,7 +318,7 @@ select {
 
 .star-rating span,
 .star-rating input {
-  display: inline-block;
+  opacity: 0;
   width: 0;
   height: 0;
   pointer-events: none;
