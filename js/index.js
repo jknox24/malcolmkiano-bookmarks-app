@@ -4,7 +4,6 @@
 // imports
 import api from './api.js';
 import store from './store.js';
-import background from './background.js';
 
 
 // ===============================================================
@@ -18,9 +17,6 @@ function init(){
   handleCancelAddClick();
   handleDismissErrorClick();
   setup();
-  
-  
-
 }
 
 function serializeJson(form){
@@ -31,11 +27,6 @@ function serializeJson(form){
 }
 
 function setup(){
-  // alter the background
-  let colors = background.getColors();
-  $('html').css('--color1', colors[0]);
-  $('html').css('--color2', colors[1]);
-
   // get items and render
   api.getItems()
     .then(bookmarks => {

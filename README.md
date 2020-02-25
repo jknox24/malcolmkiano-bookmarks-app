@@ -18,5 +18,5 @@ Links to wireframes:
 - [x] Apply any changes to app
 - [x] Test again
 - [ ] Enable bookmark editing
-- [x] Add background color switching with time
+- [x] Add background color animation
 - [ ] SHIP!
