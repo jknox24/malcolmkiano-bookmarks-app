@@ -4,7 +4,9 @@ Live app: [DEMO HERE!](https://thinkful-ei-macaw.github.io/malcolmkiano-bookmark
 Links to wireframes:
 - [Default View](https://thinkful-ei-macaw.github.io/malcolmkiano-bookmarks-app/wireframes/default.html)
 - [Expanded View](https://thinkful-ei-macaw.github.io/malcolmkiano-bookmarks-app//wireframes/expanded.html)
+- [Expanded View (with error)](https://thinkful-ei-macaw.github.io/malcolmkiano-bookmarks-app//wireframes/expanded-error.html)
 - [Adding View](https://thinkful-ei-macaw.github.io/malcolmkiano-bookmarks-app//wireframes/adding.html)
+- [Adding View (with error)](https://thinkful-ei-macaw.github.io/malcolmkiano-bookmarks-app//wireframes/adding-error.html)
 - [Empty State View](https://thinkful-ei-macaw.github.io/malcolmkiano-bookmarks-app//wireframes/empty-state.html) _(this shows when there is no data in the store)_
 
 ## TO-DO:
