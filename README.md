@@ -20,6 +20,5 @@ Links to wireframes:
 - [x] Apply any changes to app
 - [x] Test again
 - [x] Enable bookmark editing
-- [x] Add background color animation
 - [x] TEST TEST TEST
 - [x] SHIP!
