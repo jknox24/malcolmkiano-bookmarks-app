@@ -170,7 +170,7 @@ function handleDismissErrorClick(){
 }
 
 function handleInputChange(){
-  $('main').on('change', 'input[type=text], input[type=url] textarea', function(e){
+  $('main').on('change', 'input[type=text], input[type=url], textarea', function(e){
     let value = $(e.currentTarget).val().trim();
     $(e.currentTarget).val(value);
   });
