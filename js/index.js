@@ -349,7 +349,7 @@ function generateAddBookmarkFormHTML(){
           </div>
           <div class="group">
             <label for="desc">Website Description:</label>
-            <textarea required id="desc" name="desc" rows="3" maxlength="140" placeholder="Lots and lots of text describing the website that we all know nobody will read but is important to have."></textarea>
+            <textarea required id="desc" name="desc" rows="3" maxlength="150" placeholder="Lots and lots of text describing the website that we all know nobody will read but is important to have."></textarea>
           </div>
           <div class="group">
             <label for="rating">Rating:</label>
@@ -410,7 +410,7 @@ function generateEditBookmarkFormHTML(){
           </div>
           <div class="group">
             <label for="desc">Website Description:</label>
-            <textarea required id="desc" name="desc" rows="3" maxlength="140" placeholder="Lots and lots of text describing the website that we all know nobody will read but is important to have.">${bookmark.desc}</textarea>
+            <textarea required id="desc" name="desc" rows="3" maxlength="150" placeholder="Lots and lots of text describing the website that we all know nobody will read but is important to have.">${bookmark.desc}</textarea>
           </div>
           <div class="group">
             <label for="rating">Rating:</label>
