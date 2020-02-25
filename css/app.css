@@ -161,12 +161,23 @@ footer {
   outline-color: var(--color1);
 }
 
+.bookmark .bookmark-heading h2 {
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .bookmark .bookmark-heading:hover {
   color: var(--color1);
 }
 
 .bookmark.expanded .bookmark-heading {
   padding-bottom: .6em;
+}
+
+.bookmark.expanded .bookmark-heading h2 {
+  white-space: normal;
 }
 
 .bookmark.expanded:not(:last-of-type) {
@@ -190,6 +201,10 @@ footer {
 
 .bookmark .bookmark-content .delete {
   color: red;
+}
+
+.rating {
+  white-space: nowrap;
 }
 
 .rating em {

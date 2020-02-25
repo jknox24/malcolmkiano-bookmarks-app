@@ -15,11 +15,16 @@ function init(){
   handleBookmarkDeleteClick();
   handleBookmarkSubmit();
   handleCancelAddClick();
+  handleDismissErrorClick();
   
   // get items and render
   api.getItems()
     .then(bookmarks => {
       bookmarks.forEach(bookmark => store.addBookmark(bookmark));
+      render();
+    })
+    .catch(error => {
+      store.error = error;
       render();
     });
 
@@ -71,6 +76,10 @@ function handleBookmarkDeleteClick(){
       .then(() => {
         store.deleteBookmark(id);
         render();
+      })
+      .catch(error => {
+        store.error = error;
+        render();
       });
   });
 }
@@ -87,6 +96,10 @@ function handleBookmarkSubmit(){
         store.addBookmark(data);
         store.adding = false;
         render();
+      })
+      .catch(error => {
+        store.error = error;
+        render();
       });
   });
 }
@@ -95,6 +108,14 @@ function handleCancelAddClick(){
   $('main').on('click', '#cancelAdd', function(e){
     e.preventDefault();
     store.adding = false;
+    render();
+  });
+}
+
+function handleDismissErrorClick(){
+  $('main').on('click', '#closeError', function(e){
+    e.preventDefault();
+    store.error = null;
     render();
   });
 }
@@ -146,6 +167,16 @@ function generateAddButtonHTML(){
   `;
 }
 
+function generateErrorHTML(){
+  return `
+  <div class="error">
+    <h3>Oops! Something went wrong.</h3>
+    <p><strong>${store.error.code ? store.error.code + ' - ' : ''}</strong> ${store.error.message}</p>
+    <a href="#" id="closeError">dismiss</a>
+  </div>
+  `;
+}
+
 function generateBookmarksHTML(){
   let content = generateBookmarksContentHTML();
   let filterControl = '';
@@ -167,6 +198,8 @@ function generateBookmarksHTML(){
       <h2>Bookmarks</h2>
       ${filterControl}
     </header>
+
+    ${store.error !== null ? generateErrorHTML() : ''}
 
     ${content}
   </section>
@@ -241,6 +274,9 @@ function generateAddBookmarkFormHTML(){
           <header>
             <h2>Add A Bookmark</h2>
           </header>
+
+          ${store.error !== null ? generateErrorHTML() : ''}
+
           <div class="group">
             <label for="title">Website Title:</label>
             <input required type="text" id="title" name="title" autocomplete="off" placeholder="The Greatest Website Ever">
