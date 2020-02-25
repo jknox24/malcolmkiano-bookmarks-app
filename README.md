@@ -16,5 +16,5 @@ Links to wireframes:
 - [x] Code all the listener functions as well as render functions (app)
 - [x] Test the app & get feedback
 - [x] Apply any changes to app
-- [ ] Test again
+- [ ] Test again _(on it)_
 - [ ] SHIP!

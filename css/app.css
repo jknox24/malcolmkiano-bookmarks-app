@@ -16,7 +16,8 @@ body {
   padding: 0;
   user-select: none;
   text-align: center;
-  background: linear-gradient(to bottom right, var(--color1), var(--color2));
+  background-image: linear-gradient(to bottom right, var(--color1), var(--color2));
+  background-size: 100% 100%;
   color: #FFFFFF;
   transition: all .2s ease;
 }
@@ -74,9 +75,8 @@ main, .overlay .content {
 }
 
 footer {
-  margin-bottom: 2rem;
+  padding-bottom: 4rem;
 }
-
 
 /* =========================================== */
 /* greeting styles */
