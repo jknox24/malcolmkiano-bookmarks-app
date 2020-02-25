@@ -417,3 +417,7 @@ select {
   top: .1em;
   z-index: -1;
 }
+
+.credit a {
+  text-decoration: underline;
+}
