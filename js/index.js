@@ -405,11 +405,11 @@ function generateEditBookmarkFormHTML(){
 
           <div class="group">
             <label for="title">Website Title:</label>
-            <input required type="text" id="title" name="title" autocomplete="off" placeholder="The Greatest Website Ever" value="${bookmark.title}">
+            <input required readonly type="text" id="title" name="title" autocomplete="off" placeholder="The Greatest Website Ever" value="${bookmark.title}">
           </div>
           <div class="group">
             <label for="url">Website URL:</label>
-            <input required type="url" id="url" name="url" autocomplete="off" placeholder="https://omg.thegreatestwebsiteever.com" value="${bookmark.url}">
+            <input required readonly type="url" id="url" name="url" autocomplete="off" placeholder="https://omg.thegreatestwebsiteever.com" value="${bookmark.url}">
           </div>
           <div class="group">
             <label for="desc">Website Description:</label>
