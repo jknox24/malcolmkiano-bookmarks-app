@@ -1,5 +1,5 @@
 # Bookmarks App
-See the app [live](https://thinkful-ei-macaw.github.io/malcolmkiano-bookmarks-app/)
+See the app [live](https://thinkful-ei-macaw.github.io/malcolmkiano-bookmarks-app/)!
 
 ## User stories:
 As a user:
